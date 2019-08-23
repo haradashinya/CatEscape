@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArrowController.cs" />
      <Compile Include="Assets\Scripts\ArrowGenerator.cs" />
+     <Compile Include="Assets\Scripts\GameDirector.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/shinyaharada/projects/CatEscape/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

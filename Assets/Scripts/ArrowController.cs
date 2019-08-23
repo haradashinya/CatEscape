@@ -20,11 +20,8 @@ public class ArrowController : MonoBehaviour
             Destroy(transform);
         }
 
-
         Vector2 p1 = transform.position;
         Vector2 p2 = player.transform.position;
-
-
         Vector2 dir = p1 - p2;
 
         float d = dir.magnitude;
@@ -33,11 +30,9 @@ public class ArrowController : MonoBehaviour
         float r2 = 0.5f; //矢の半径
 
         if (d < r1 + r2){
+            GameObject director = GameObject.Find("GameDirector");
+            director.GetComponent<GameDirector>().DecleaseHp();
             Destroy(gameObject);
         }
-
-
-
-        
     }
 }
